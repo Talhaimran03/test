@@ -528,4 +528,95 @@ input:checked~#h-menu_black {
     margin-top: 330px;
 }
 
-/* Progetti selezionati */
+/* projects */
+.selected-projects-container {
+    width: 100%;
+}
+
+
+.selected-projects-title {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-top: 100px;
+    margin-left: 10%;
+}
+
+.selected-projects {
+    width: 2050px;
+    height: 877px;
+    display: flex;
+
+    margin-top: 50px;
+    margin-left: 10%;
+    /* width: 150%; */
+}
+
+.green-line {
+    width: 84%;
+    height: 0px;
+    border: 1px solid #5AEF74;
+
+    margin-top: 600px;
+}
+
+.project {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: filter 1s ease, transform 1s ease;
+
+    margin-right: 30px;
+}
+
+.project img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    filter: grayscale(50%);
+    /* background: rgba(38, 38, 38, 0.5); */
+    transition: transform 1s ease;
+}
+
+.project:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+
+.project-title {
+    font-size: 38px;
+    line-height: 100px;
+    letter-spacing: 1.152px;
+    color: #FFFFFF;
+    margin-left: 7.5%;
+}
+
+.project-info {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1.152px;
+    color: #FFFFFF;
+    margin-left: 7.5%;
+}
+
+.all-projects {
+    margin-left: 10%;
+    font-size: 22px;
+    line-height: 27px;
+
+    letter-spacing: 1.152px;
+    text-decoration-line: underline;
+
+    color: #F7F7F7;
+}
+
+.line-container3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
