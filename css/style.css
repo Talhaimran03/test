@@ -421,6 +421,7 @@ a {
 /* creative-agency */
 .creative-agency-container {
     width: 45%;
+    padding-left: 40px;
 }
 
 .creative-agency-text {
@@ -486,6 +487,7 @@ a {
 /* projects */
 .selected-projects-container {
     width: 100%;
+    overflow: hidden;
 }
 
 
@@ -503,7 +505,6 @@ a {
 
     margin-top: 50px;
     margin-left: 10%;
-    /* width: 150%; */
 }
 
 .green-line {
@@ -533,7 +534,6 @@ a {
     width: 100%;
     height: auto;
     filter: grayscale(50%);
-    /* background: rgba(38, 38, 38, 0.5); */
     transition: transform 1s ease;
 }
 
@@ -641,6 +641,7 @@ a {
 .we-do-container {
     width: 60%;
     display: flex;
+    padding-left: 20px;
 }
 
 .animation {
@@ -755,6 +756,7 @@ a {
 
 .about-us-images {
     width: 55%;
+    padding-left: 30px;
 }
 
 .about-us-img-1 {
@@ -814,6 +816,14 @@ a {
     width: 100%;
     margin-top: 10px;
 }
+
+.believes-in-us {
+    width: 100%;
+}
+
+.believes-in-us>img {
+    width: 100%;
+}    
 
 .believes-in-us-title {
     margin-left: 10%;
@@ -1048,12 +1058,63 @@ footer {
         width: 100%;
         border: 1px solid red;
     }
-
+    
     .creative-agency-container {
-        margin-top: 100px;
+        margin-top: 150px;
+        padding-left: 28%;
     }
     
     .believes-in-us-container {
         margin-top: 700px;
     }
+
+    .scrolling-text-container>img {
+        height: 200px;
+    }
+    
+    .selected-projects {
+        width: 117%;
+        height: 40%;
+    }
+
+    .project {
+        height: 56vh;
+    }
+
+    .green-line {
+        margin-top: 75%;
+    }
+
+    .our-services {
+        justify-content: center;
+    }
+
+    .discover-services {
+        margin-left: 28%;
+    }
+
+    .we-do-container {
+        justify-content: center;
+    }
+
+    .about-us-title {
+        margin-left: 28%;
+    }
+
+    .about-us-text {
+        margin-left: 28%;
+    }
+
+    .about-us-button {
+        margin-left: 28%;
+    }
+
+    .about-us-images {
+        margin-left: 10%;
+    }
+
+    .believes-in-us-title {
+        height: 200px;
+    }
+
 }
