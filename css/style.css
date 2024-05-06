@@ -59,7 +59,7 @@ a {
 }
 
 .menu-list {
-    margin-top: 200px;
+    margin-top: 80px;
     margin-left: 100px;
     width: 50%;
     border-bottom: 2px solid #ffffff33;
@@ -70,7 +70,59 @@ a {
 }
 
 .info {
-    width: 25%;
+    width: 30%;
+    text-align: left;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 1.152px;
+    color: #F7F7F7;
+}
+
+.address {
+    margin-top: 75px;
+    margin-left: 25%;
+}
+
+.contacts {
+    margin-top: 50px;
+    margin-left: 25%;
+}
+
+.menu-items-title {
+    font-weight: 700;
+}
+
+.menu-items-text {
+    font-weight: 400;
+}
+
+.start-project-button {
+    margin-top: 50px;
+    margin-left: 25%;
+
+    background: #3E3D3D;
+    width: 295px;
+    height: 61px;
+    border-radius: 48.5px;
+    padding: 0;
+    border: 0;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.info>img {
+    width: 80%;
+    margin-left: 25%;
+    margin-top: 80px;
 }
 
 
@@ -212,7 +264,7 @@ a {
     content: "Chiudi";
 }
 
-/* content */
+/* navbar-content */
 .navbar-containerainer {
     top: 60px;
     height: 92vh;
@@ -260,12 +312,14 @@ a {
 /* xo> img */
 .xo-container {
     position: absolute;
-
-    height: 745px;
-    width: 1962px;
-    background-image: url('../assets/img/xo-img.svg');
+    overflow: hidden;
     margin-top: 100px;
     margin-left: -200px;
+}
+
+.xo-container>img {
+    height: 80%;
+    width: 120%;
 }
 
 .boschetti-container {
@@ -287,8 +341,7 @@ a {
 
 .boschetti-video {
     z-index: 2;
-    width: 100%;
-    height: 750px;
+    width: 85%;
 }
 
 /*  */
@@ -321,6 +374,7 @@ a {
     margin-top: 400px;
 
     display: flex;
+    flex-wrap: wrap;
 }
 
 .brand {
@@ -526,6 +580,7 @@ a {
     width: 100%;
     margin-top: 100px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .our-services {
@@ -646,6 +701,7 @@ a {
     width: 100%;
     margin-top: 100px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .about-us-text-container {
@@ -775,6 +831,7 @@ a {
     width: 100%;
     margin-top: 100px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .our-sectors {
@@ -887,7 +944,8 @@ a {
 }
 
 .contact-us-text {
-    padding-top: 310px;
+    position: relative;
+    padding-top: 12%;
     margin-left: 10%;
     width: 56%;
     font-family: 'Montserrat';
@@ -979,4 +1037,14 @@ footer {
 .footer-2>p {
     width: 87%;
     color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 992px) {
+    [class*="col-phone"] {
+        /* float: left; */
+        padding: 15px;
+        width: 100%;
+        border: 1px solid red;
+    }
 }
