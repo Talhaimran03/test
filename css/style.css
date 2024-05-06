@@ -348,6 +348,7 @@ a {
 .scrolling-text-container {
     width: 100%;
     margin-top: 230px;
+    overflow: hidden;
 }
 
 .scrolling-text-container>img {
@@ -922,7 +923,6 @@ a {
 .contact-us-container {
     width: 100%;
     margin-top: 100px;
-    width: 1728px;
     background: #5AEF74;
 }
 
