@@ -1040,11 +1040,20 @@ footer {
 }
 
 
+/* responsive */
 @media screen and (max-width: 992px) {
     [class*="col-phone"] {
         /* float: left; */
         padding: 15px;
         width: 100%;
         border: 1px solid red;
+    }
+
+    .creative-agency-container {
+        margin-top: 100px;
+    }
+    
+    .believes-in-us-container {
+        margin-top: 700px;
     }
 }
