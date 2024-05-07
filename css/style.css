@@ -5,6 +5,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     background-color: #0C0B0B;
@@ -123,6 +124,10 @@ a {
     width: 80%;
     margin-left: 25%;
     margin-top: 80px;
+}
+
+#toggle:checked ~ .menu-items .start-project-button:hover ~ .info .menu-list {
+    background-color: #5AEF74;
 }
 
 
@@ -262,13 +267,6 @@ a {
 
 #toggle:checked+.navbar .menu-text::after {
     content: "Chiudi";
-}
-
-/* navbar-content */
-.navbar-containerainer {
-    top: 60px;
-    height: 92vh;
-    text-align: center;
 }
 
 .noscroll {
@@ -1071,7 +1069,8 @@ footer {
     .scrolling-text-container>img {
         height: 200px;
     }
-    
+
+    /* da rivedere */
     .selected-projects {
         width: 117%;
         height: 40%;
@@ -1116,5 +1115,44 @@ footer {
     .believes-in-us-title {
         height: 200px;
     }
+}
 
+/* 600px se serve */
+@media screen and (max-width: 768px) {
+    .chi-siamo-text {
+        font-size: 38px;
+    }
+
+    .scrolling-text-container>img {
+        height: 170px;
+    }
+
+    .stroke-10 {
+        font-size: 38rem;
+    }
+
+    .brand-text {
+        font-size: 68px;
+    }
+
+    /*  */
+    .project {
+        height: 29vh;
+    }
+
+    .about-us-title {
+        margin-left: 15%;
+    }
+
+    .about-us-text {
+        margin-left: 15%;
+    }
+
+    .about-us-button {
+        margin-left: 15%;
+    }
+
+    .about-us-images {
+        margin-left: 0;
+    }
 }
