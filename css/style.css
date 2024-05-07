@@ -432,13 +432,13 @@ a {
     color: #F7F7F7;
 }
 
-.creative-agency-buttons {
+.contact-us-buttons {
     width: 50%;
     margin-top: 50px;
     display: flex;
 }
 
-.creative-agency-buttons>.contact-us-button {
+.contact-us-buttons>.contact-us-button {
     cursor: pointer;
     background: #5AEF74;
     border-radius: 48.5px;
@@ -451,7 +451,7 @@ a {
     font-weight: 500;
 }
 
-.creative-agency-buttons>.call {
+.contact-us-buttons>.call-button {
     cursor: pointer;
     background: #5AEF74;
     border-radius: 48.5px;
@@ -462,16 +462,16 @@ a {
     margin-left: 5px;
 }
 
-.creative-agency-buttons:hover .contact-us-button,
-.creative-agency-buttons:hover .call {
+.contact-us-buttons:hover .contact-us-button,
+.contact-us-buttons:hover .call-button {
     background-color: #FFFFFF;
 }
 
-.creative-agency-buttons img {
+.contact-us-buttons img {
     transition: transform 0.3s ease;
 }
 
-.creative-agency-buttons:hover img {
+.contact-us-buttons:hover img {
     transform: rotate(-45deg);
 }
 
@@ -531,12 +531,12 @@ a {
     z-index: -1;
     width: 100%;
     height: auto;
-    filter: grayscale(50%);
+    mix-blend-mode: luminosity;
     transition: transform 1s ease;
 }
 
 .project:hover img {
-    filter: grayscale(0%);
+    mix-blend-mode: normal;
     transform: scale(1.2);
 }
 
@@ -798,15 +798,15 @@ a {
 }
 
 .about-us-img-1>img {
-    filter: grayscale(90%);
+    mix-blend-mode: luminosity;
 }
 
 .about-us-img-2>img {
-    filter: grayscale(90%);
+    mix-blend-mode: luminosity;
 }
 
 .about-us-img-3>img {
-    filter: grayscale(90%);
+    mix-blend-mode: luminosity;
 }
 
 /* believes-in-us */
