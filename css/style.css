@@ -70,8 +70,13 @@ a {
     background-color: #4A4A4A;
 }
 
+.menu-list>ul {
+    border-bottom: 2px solid #ffffff33;
+}
+
 .info {
-    width: 30%;
+    overflow: hidden;
+    width: 50%;
     text-align: left;
 
     font-family: 'Montserrat';
@@ -121,7 +126,7 @@ a {
 }
 
 .info>img {
-    width: 80%;
+    width: 52%;
     margin-left: 25%;
     margin-top: 80px;
 }
@@ -162,11 +167,10 @@ a {
 
 .menu-items a {
     padding: 20px;
-
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 300;
-    font-size: 76px;
+    font-size: 48px;
     line-height: 80px;
     display: flex;
     align-items: center;
@@ -1051,10 +1055,23 @@ footer {
 /* responsive */
 @media screen and (max-width: 992px) {
     [class*="col-phone"] {
-        /* float: left; */
         padding: 15px;
         width: 100%;
         border: 1px solid red;
+    }
+
+    .menu-items a {
+        font-size: 38px;
+        height: 95px;
+    }
+
+    .info {
+        font-size: 17px;
+    }
+
+    .start-project-button {
+        width: 220px;
+        font-size: 20px;
     }
     
     .creative-agency-container {
@@ -1070,7 +1087,6 @@ footer {
         height: 200px;
     }
 
-    /* da rivedere */
     .selected-projects {
         width: 117%;
         height: 40%;
@@ -1082,6 +1098,14 @@ footer {
 
     .green-line {
         margin-top: 75%;
+    }
+
+    .selected-projects-title {
+        margin-left: 0;
+    }
+
+    .selected-projects {
+        margin-left: 0;
     }
 
     .our-services {
@@ -1115,30 +1139,260 @@ footer {
     .believes-in-us-title {
         height: 200px;
     }
+
+    footer {
+        font-size: 24px;
+    }
+
+    .footer-xo {
+        width: 24%;
+    }
+    
+    .footer-xo>img {
+        width: 180px;
+    }
+    
+    .footer-address {
+        width: 32%;
+    }
+
+    .footer-follow-us {
+        width: 32%;
+    }
+
+    .footer-menu {
+        width: 22%;
+    }
+
+    .footer-2 {
+        margin-top: 58px;
+        margin-bottom: 0;
+    }
 }
 
-/* 600px se serve */
 @media screen and (max-width: 768px) {
+    
+    .logo-container {
+        margin-left: 3vh;
+    }
+
+    .menu-items {
+        padding-top: 114px;
+    }
+    
+    .menu-items a {
+        font-size: 16px;
+        height: 70px;
+    }
+
+    .menu-container {
+        margin-right: 3vh;
+    }
+    
+    .menu-list {
+        margin-left: 30px;
+    }
+
+    .info {
+        font-size: 13px;
+    }
+
+    .address {
+        margin-left: 12%;
+    }
+
+    .contacts {
+        margin-left: 12%;
+    }
+
+    .start-project-button {
+        margin-left: 12%;
+        width: 154px;
+        height: 50px;
+        font-size: 14px;
+    }
+    
     .chi-siamo-text {
-        font-size: 38px;
+        font-size: 28px;
+        line-height: 49.4px;
     }
 
     .scrolling-text-container>img {
         height: 170px;
     }
 
+    .scrolling-text-container {
+        margin-top: 130px;
+    }
+
+    .agency-container {
+        margin-top: 130px;
+    }
+
     .stroke-10 {
-        font-size: 38rem;
+        margin-left: 0px;
+        font-size: 22rem;
     }
 
-    .brand-text {
-        font-size: 68px;
+    .brand-text-container {
+        width: 76%;
+        margin-top: 30px;
+        margin-left: 0px;
     }
 
-    /*  */
+    .brand-text-container>p {
+        font-size: 35px;
+        line-height: 50px;
+    }
+
+    .creative-agency-container {
+        margin-top: 80px;
+        padding-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .creative-agency-content {
+        width: 80%;
+    }
+
+    .creative-agency-text {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .contact-us-buttons {
+        width: 100%;
+    }
+
+    .line-container2 {
+        margin-top: 100px;
+    }
+
+    .selected-projects-title {
+        margin-top: 46px;
+    }
+
+    .selected-projects {
+        width: 169%;
+        height: 40%;
+    }
+
     .project {
-        height: 29vh;
+        height: 36vh;
+        border-radius: 2%;
     }
+
+    .green-line {
+        margin-top: 60%;
+    }
+
+    .project-title {
+        font-size: 26px;
+        line-height: 80px;
+    }
+    
+    .project-info {
+        font-size: 12px;
+    }
+
+    .all-projects {
+        font-size: 18px;
+    }
+
+    .our-services-title {
+        font-size: 20px;
+    }
+
+    .our-services-text {
+        font-size: 38px;
+    }
+
+    .discover-services {
+        margin-left: 0;
+    }
+
+    .animation {
+        margin-top: 100px;
+        height: 598px;
+    }
+
+    .we-do-text {
+        font-size: 12px;
+    }
+
+    .we-do-list {
+        font-size: 13px;
+        line-height: 35px;
+    }
+
+    .slider {
+        height: 570px;
+    }
+
+    .slider-green {
+        margin-top: 232px;
+    }
+
+    .about-us-title {
+        font-size: 16px;
+    }
+
+    .about-us-text {
+        margin-top: 0;
+        width: 82%;
+        font-size: 14px;
+    }
+
+    .believes-in-us-container {
+        margin-top: 884px;
+    }
+
+    .believes-in-us-title {
+        height: 150px;
+    }
+
+    .our-sectors-title {
+        font-size: 18px;
+        margin-left: 14%;
+    }
+
+    .sector-text {
+        font-size: 20px;
+    }
+
+    .sector-rectangle {
+        margin-left: 14%;
+    }
+
+    .our-sectors-text {
+        margin-top: 60px;
+        width: 88%;
+        font-size: 18px;
+    }
+
+    .contact-us {
+        padding-bottom: 70px;   
+    }
+
+    .contact-us-text {
+        padding-top: 24%;
+        width: 75%;
+        font-size: 28px;
+        line-height: 48px;
+    }
+
+    footer {
+        font-size: 12px;
+        line-height: 23px;
+    }
+    
+    .footer-xo>img {
+        width: 90px;
+    }
+
+
+
 
     .about-us-title {
         margin-left: 15%;

@@ -31,11 +31,10 @@
 .we-are-img {
     position: absolute;
     margin-top: -350px;
-    margin-left: 32%;
+    margin-left: 22%;
     z-index: -1;
     position: absolute;
     width: 1194px;
-    height: 453px;
 }
 
 /* ideas */
@@ -52,7 +51,7 @@
     width: 974px;
     height: 639px;
     margin-top: 230px;
-    margin-left: 34%;
+    margin-left: 22%;
 }
 
 .ideas-img-2 {
@@ -60,7 +59,7 @@
     width: 591px;
     height: 856px;
     margin-top: 700px;
-    margin-left: 12%;
+    margin-left: 2%;
     z-index: 3;
 }
 
@@ -88,7 +87,7 @@
     width: 666px;
     height: 632px;
     margin-top: 980px;
-    margin-left: 53%;
+    margin-left: 49%;
 }
 
 .ideas-title {
@@ -247,7 +246,7 @@
 
 .our-strength-img>img {
     width: 100%;
-    height: 1012px;
+    height: 119vh;
 }
 
 .our-strength-box {
@@ -307,13 +306,12 @@
 }
 
 .our-team-title {
-    width: 963px;
-    height: 102px;
+    width: 80%;
     align-self: center;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 30px;
     line-height: 122px;
     text-align: center;
     letter-spacing: 2px;
@@ -368,6 +366,7 @@
 .kick-off-container {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .kick-off-contacts {
@@ -419,7 +418,7 @@
 }
 
 .kick-off-xo {
-    margin-top: 500px;
+    margin-top: 50px;
     width: 72%;
 }
 
@@ -430,7 +429,7 @@
 
 .kick-off-details-text {
     width: 87%;
-    margin-top: 502px;
+    margin-top: 50px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -486,13 +485,13 @@
 .join-team-img-1 {
     position: absolute;
     margin-top: 80px;
-    margin-left: 10%;
+    margin-left: 4%;
 }
 
 .join-team-img-2 {
     position: absolute;
     margin-top: 750px;
-    margin-left: 45%;
+    margin-left: 47%;
 }
 
 .side-color-purple {
@@ -502,7 +501,7 @@
 
 .side-color-green {
     width: 17px;
-    height: 797px;
+    height: 799px;
 }
 
 .join-team-img-1>img {
@@ -558,4 +557,325 @@
     line-height: 34px;
     text-align: center;
     color: #FFFFFF;
+}
+
+@media screen and (max-width: 1270px) {
+    .ideas-text-container {
+        margin-top: 1600px;
+        margin-left: 25%;
+    }
+
+    .symbols-meaning-container {
+        width: 100%;
+        margin-top: 2336px;
+    }
+
+    .symbol-meaning-title {
+        font-size: 46px;
+    }
+
+    .join-team {
+        width: 100%;
+        margin-left: -25%;
+    }
+
+    .our-team-title {
+        font-size: 24px;
+    }
+
+    .join-team-imgs {
+        margin-top: auto;
+    }
+
+    .join-team-container {
+        padding-bottom: 1550px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    [class*="col-phone"] {
+        padding: 15px;
+        width: 100%;
+        border: 1px solid red;
+    }
+
+    .we-are-container {
+        margin-top: 150px;
+    }
+
+    .we-are-img {
+        margin-left: 12%;
+        width: 900px;
+    }
+
+    .ideas-text-container {
+        margin-left: 0;
+    }
+
+    .promote-ideas-container {
+        margin-top: 50px;
+    }  
+    
+    .our-strength-container {
+        padding: 0;
+    }
+
+    .our-strength {
+        width: 96%;
+        height: 56%;
+        border-radius: 250px;
+    }
+
+    .our-team-title {
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .our-team {
+        margin-top: 50px;
+    }
+
+    .kick-off-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .join-team-container {
+        margin-top: 90px;
+    }
+
+    .join-team {
+        width: 100%;
+        margin-left: -100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .we-are-img {
+        margin-left: 8%;
+        width: 624px;
+    }
+
+    .we-are-title {
+        font-size: 16px;
+    }
+
+    .we-are-text {
+        width: 76%;
+        font-size: 58px;
+        line-height: 82px;
+    }
+
+    .we-are-img {
+        margin-top: -228px;
+    }
+
+    .ideas-img-1>img {
+        height: 325px;
+    }
+    
+    .ideas-img-2>img {
+        height: 450px;
+    }
+    
+    .we-are-red {
+        height: 325px;
+    }
+
+    .we-are-green {
+        height: 450px;
+    }
+
+    .ideas-img-2 {
+        margin-top: 508px;
+    }
+    
+    .ideas-text-container {
+        margin-top: 1055px;
+    }
+
+    .ideas-title {
+        font-size: 48px;
+        line-height: 70px;
+        width: 80%;
+    }
+
+    .symbols-meaning-container {
+        margin-top: 1950px;
+        padding-bottom: 150px;
+    }
+
+    .symbol-meaning-title {
+        font-size: 15px;
+    }
+
+    .symbols {
+        width: 100%;
+        height: 300px;
+    }
+
+    .x {
+        width: 33.3%;
+    }
+    .o {
+        width: 33.3%;
+    }
+    .v {
+        width: 33.3%;
+    }
+   
+    .x>svg {
+        width: 100%;
+        height: auto;
+    }
+    .o>svg {
+        width: 100%;
+        height: auto;
+    }
+    .v>svg {
+        width: 85%;
+        height: auto;
+    }
+
+    .symbol-meaning-text {
+        font-size: 72px;
+    }
+
+    .promote-ideas-text {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .our-strength-container {
+        height: auto;
+    }
+
+    .our-strength {
+        height: 57%;
+        width: 80%;
+    }
+
+    .our-strength-img>img {
+        height: 57vh;
+    }
+
+    .our-strength-box {
+        height: 57vh;
+    }
+
+    .our-strength-title {
+        font-size: 16px;
+        line-height: 50px;
+    }
+
+    .our-strength-text {
+        font-size: 14px;
+        line-height: 16px;
+        width: 81%;
+    }
+
+    .our-team-container {
+        padding: 0;
+    }
+
+    .our-team {
+        width: 96%;
+    }    
+
+    .our-team-component {
+        width: 33%;
+    }
+
+    .our-team-title {
+        font-size: 16px;
+    }
+
+    .our-team-component-name {
+        font-size: 13px;
+        line-height: 16px;
+        bottom: 70px;
+        left: 5px;
+    }
+
+    .our-team-component-role {
+        font-size: 10px;
+        line-height: 13px;
+        bottom: 68px;
+        left: 5px;
+    }
+
+    .kick-off-txt {
+        font-size: 18px;
+    }
+
+    .kick-off-title {
+        font-size: 47px;
+        line-height: 70px;
+    }
+
+    .kick-off-text {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .contact-us-buttons {
+        width: 78%;
+    }
+
+    .kick-off-details-text {
+        font-size: 18px;
+    }
+
+    .kick-off-detail {
+        height: 60px;
+    }
+
+    .kick-off-detail>p {
+        font-size: 13px;
+    }
+
+    .join-team-container {
+        padding-bottom: 700px;
+    }
+
+    .join-team-title {
+        width: 100%;
+        font-size: 51px;
+        line-height: 66px;
+    }
+
+    .join-team-text {
+        width: 100%;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .join-team-img-2 {
+        margin-top: 360px;
+        margin-left: 38%;
+    }
+
+    .join-team-img-1 {
+        height: 325px;
+    }
+    .join-team-img-1>img {
+        height: 325px;
+    }
+    .side-color-purple{
+        height: 325px;
+    }
+    
+    .join-team-img-2 {
+        height: 325px;
+    }
+    .join-team-img-2>img {
+        height: 325px;
+    }
+    .side-color-green{
+        height: 325px;
+    }
+
+    
 }
