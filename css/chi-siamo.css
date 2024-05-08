@@ -52,7 +52,7 @@
     width: 974px;
     height: 639px;
     margin-top: 230px;
-    margin-left: 41%; 
+    margin-left: 34%;
 }
 
 .ideas-img-2 {
@@ -60,16 +60,16 @@
     width: 591px;
     height: 856px;
     margin-top: 700px;
-    margin-left: 21%;
+    margin-left: 12%;
     z-index: 3;
 }
 
-.side-color-red {
+.we-are-red {
     width: 17px;
     height: 639px;
 }
 
-.side-color-green {
+.we-are-green {
     width: 19px;
     height: 856px;
 }
@@ -88,7 +88,7 @@
     width: 666px;
     height: 632px;
     margin-top: 980px;
-    margin-left: 61%;
+    margin-left: 53%;
 }
 
 .ideas-title {
@@ -136,6 +136,9 @@
 .symbols-meaning-container {
     width: 100%;
     margin-top: 1880px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .symbol-meaning-title {
@@ -151,10 +154,9 @@
 }
 
 .symbols {
-    margin-top: 130px;
+    margin-top: 20px;
     width: 749px;
     height: 490px;
-    margin-left: 20%;
     display: flex;
     align-items: center;
 }
@@ -200,9 +202,17 @@
 .promote-ideas-container {
     width: 100%;
     margin-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promote-ideas-text-container {
+    width: 90%;
 }
 
 .promote-ideas-text {
+    width: 90%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -210,15 +220,15 @@
     line-height: 48px;
     letter-spacing: 1.152px;
     color: #F7F7F7;
-    width: 1278px;
 }
 
 .promote-ideas-img {
-    width: 100%;
+    width: 90%;
+    margin-top: 30px;
 }
 
 .promote-ideas-img>img {
-    width: 92%;
+    width: 100%;
     mix-blend-mode: luminosity;
 }
 
@@ -362,9 +372,14 @@
 
 .kick-off-contacts {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .kick-off-txt {
+    margin-top: 50px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -376,6 +391,7 @@
 }
 
 .kick-off-title {
+    width: 90%;
     font-family: 'Playfair Display';
     font-style: italic;
     font-weight: 400;
@@ -386,6 +402,8 @@
 }
 
 .kick-off-text {
+    margin-top: 80px;
+    width: 80%;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -396,10 +414,12 @@
 }
 
 .contact-us-buttons {
-    width: 44%;
+    margin-top: 60px;
+    width: 50%;
 }
 
 .kick-off-xo {
+    margin-top: 500px;
     width: 72%;
 }
 
@@ -409,9 +429,8 @@
 }
 
 .kick-off-details-text {
-    width: 666px;
-    height: 432px;
-
+    width: 87%;
+    margin-top: 502px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -421,9 +440,20 @@
     color: #F7F7F7;
 }
 
+.kick-off-details-list {
+    margin-top: 100px;
+    width: 87%;
+    border-bottom: 2px solid #ffffff33;
+}
+
 .kick-off-detail {
-    /* width: 721px;
-    height: 823px; */
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 2px solid #ffffff33;
 }
 
 .kick-off-detail>p {
@@ -436,11 +466,96 @@
     color: #FFFFFF;
 }
 
-.kick-off-detail>svg {
+.kick-off-details {
+    width: 50%;
+}
+
+/* join-team */
+.join-team-container {
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    padding-bottom: 950px;
 
 }
 
-
-.kick-off-details {
+.join-team-imgs {
     width: 50%;
+}
+
+.join-team-img-1 {
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 10%;
+}
+
+.join-team-img-2 {
+    position: absolute;
+    margin-top: 750px;
+    margin-left: 45%;
+}
+
+.side-color-purple {
+    width: 17px;
+    height: 797px;
+}
+
+.side-color-green {
+    width: 17px;
+    height: 797px;
+}
+
+.join-team-img-1>img {
+    mix-blend-mode: luminosity;
+    height: 797px;
+}
+
+.join-team-img-2>img {
+    mix-blend-mode: luminosity;
+    height: 799px;
+}
+
+.join-team {
+    width: 50%;
+}
+
+.join-team-title {
+    width: 80%;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 102px;
+    letter-spacing: 1.152px;
+    color: #F7F7F7;
+}
+
+.join-team-text {
+    margin-top: 50px;
+    width: 88%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 1.152px;
+    color: #F7F7F7;
+}
+
+.join-team-button {
+    margin-top: 50px;
+    padding: 0;
+    border: 0;
+    background: #3E3D3D;
+    border-radius: 48.5px;
+    width: 240px;
+    height: 61px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #FFFFFF;
 }
