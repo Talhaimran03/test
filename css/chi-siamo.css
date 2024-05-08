@@ -559,6 +559,8 @@
     color: #FFFFFF;
 }
 
+/* responsive */
+
 @media screen and (max-width: 1270px) {
     .ideas-text-container {
         margin-top: 1600px;
@@ -596,7 +598,7 @@
     [class*="col-phone"] {
         padding: 15px;
         width: 100%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     .we-are-container {

@@ -1053,11 +1053,18 @@ footer {
 
 
 /* responsive */
+
+@media screen and (max-width: 1270px) {
+    .brand-text-container {
+        margin-left: -50px;
+    }
+}
+
 @media screen and (max-width: 992px) {
     [class*="col-phone"] {
         padding: 15px;
         width: 100%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     .menu-items a {
