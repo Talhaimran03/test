@@ -131,7 +131,7 @@ a {
     margin-top: 80px;
 }
 
-#toggle:checked ~ .menu-items .start-project-button:hover ~ .info .menu-list {
+#toggle:checked~.menu-items .start-project-button:hover~.info .menu-list {
     background-color: #5AEF74;
 }
 
@@ -351,10 +351,13 @@ a {
     width: 100%;
     margin-top: 230px;
     overflow: hidden;
+    white-space: nowrap;
 }
 
-.scrolling-text-container>img {
-    height: 272px;
+.scrolling-text {
+    color: #FFFFFF;
+    font-size: 230px;
+    font-weight: 200;
 }
 
 /* Line */
@@ -487,11 +490,11 @@ a {
 }
 
 /* projects */
+
 .selected-projects-container {
     width: 100%;
     overflow: hidden;
 }
-
 
 .selected-projects-title {
     color: #FFFFFF;
@@ -500,68 +503,86 @@ a {
     margin-left: 10%;
 }
 
-.selected-projects {
-    width: 2050px;
-    height: 877px;
-    display: flex;
 
+.selected-projects {
+    white-space: nowrap;
     margin-top: 50px;
-    margin-left: 10%;
+    width: 100%!important;
+    cursor: grab;
+}
+
+.project {
+    display: inline-block;
+    height: 100vh;
+    width: 72vh;
+    border-radius: 40px;
+    overflow: hidden;
+    transition: filter 1s ease, transform 1s ease;
+    margin-right: 30px;
+}
+
+#project-1 {
+    margin-left: 100px;
+}
+
+.project figure {
+    position: relative;
+    height: 100vh;
+    display: block;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    transition: transform 1s ease;
+}
+
+.project:hover figure {
+    transform: scale(1.2);
+}
+
+.project>figure>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.project>figure>img:hover {
+    opacity: 1;
 }
 
 .green-line {
     width: 84%;
     height: 0px;
     border: 1px solid #5AEF74;
-
-    margin-top: 600px;
+    margin-top: -150px;
+    z-index: 2;
 }
 
-.project {
-    position: relative;
-    width: 600px;
-    height: 800px;
-    border-radius: 40px;
-    overflow: hidden;
-    transition: filter 1s ease, transform 1s ease;
-
-    margin-right: 30px;
-}
-
-.project img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: auto;
-    mix-blend-mode: luminosity;
-    transition: transform 1s ease;
-}
-
-.project:hover img {
-    mix-blend-mode: normal;
-    transform: scale(1.2);
-}
 
 .project-title {
+    position: relative;
     font-size: 38px;
     line-height: 100px;
     letter-spacing: 1.152px;
     color: #FFFFFF;
     margin-left: 7.5%;
+    margin-top: -160px;
+    z-index: 2;
 }
 
 .project-info {
+    position: relative;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1.152px;
     color: #FFFFFF;
     margin-left: 7.5%;
+    z-index: 2;
 }
 
 .all-projects {
     margin-left: 10%;
+    margin-top: 30px;
     font-size: 22px;
     line-height: 27px;
 
@@ -820,12 +841,34 @@ a {
 }
 
 .believes-in-us {
+    margin-top: 40px;
+    height: 130px;
     width: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
-.believes-in-us>img {
-    width: 100%;
-}    
+@keyframes logos-scroll {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(calc(-400px * 6))
+    }
+}
+
+.believes-in-us-loghi {
+    animation: logos-scroll 15s linear infinite;
+    display: flex;
+    width: calc(400px* 16);
+}
+
+.believes-in-us-logh {
+    height: 130px;
+    width: 300px;
+    margin-right: 100px;
+}
 
 .believes-in-us-title {
     margin-left: 10%;
@@ -987,6 +1030,7 @@ a {
     text-align: center;
     color: #FFFFFF;
 }
+
 /* footer */
 footer {
     width: 100%;
@@ -1080,18 +1124,14 @@ footer {
         width: 220px;
         font-size: 20px;
     }
-    
+
     .creative-agency-container {
         margin-top: 150px;
         padding-left: 28%;
     }
-    
+
     .believes-in-us-container {
         margin-top: 700px;
-    }
-
-    .scrolling-text-container>img {
-        height: 200px;
     }
 
     .selected-projects {
@@ -1154,11 +1194,11 @@ footer {
     .footer-xo {
         width: 24%;
     }
-    
+
     .footer-xo>img {
         width: 180px;
     }
-    
+
     .footer-address {
         width: 32%;
     }
@@ -1178,7 +1218,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    
+
     .logo-container {
         margin-left: 3vh;
     }
@@ -1186,7 +1226,7 @@ footer {
     .menu-items {
         padding-top: 114px;
     }
-    
+
     .menu-items a {
         font-size: 16px;
         height: 70px;
@@ -1195,7 +1235,7 @@ footer {
     .menu-container {
         margin-right: 3vh;
     }
-    
+
     .menu-list {
         margin-left: 30px;
     }
@@ -1218,14 +1258,10 @@ footer {
         height: 50px;
         font-size: 14px;
     }
-    
+
     .chi-siamo-text {
         font-size: 28px;
         line-height: 49.4px;
-    }
-
-    .scrolling-text-container>img {
-        height: 170px;
     }
 
     .scrolling-text-container {
@@ -1298,7 +1334,7 @@ footer {
         font-size: 26px;
         line-height: 80px;
     }
-    
+
     .project-info {
         font-size: 12px;
     }
@@ -1379,7 +1415,7 @@ footer {
     }
 
     .contact-us {
-        padding-bottom: 70px;   
+        padding-bottom: 70px;
     }
 
     .contact-us-text {
@@ -1393,13 +1429,10 @@ footer {
         font-size: 12px;
         line-height: 23px;
     }
-    
+
     .footer-xo>img {
         width: 90px;
     }
-
-
-
 
     .about-us-title {
         margin-left: 15%;
