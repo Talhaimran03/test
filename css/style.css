@@ -346,7 +346,7 @@ a {
     width: 85%;
 }
 
-/*  */
+/* scrolling-text */
 .scrolling-text-container {
     width: 100%;
     margin-top: 230px;
@@ -864,7 +864,7 @@ a {
     width: calc(400px* 16);
 }
 
-.believes-in-us-logh {
+.believes-in-us-logo {
     height: 130px;
     width: 300px;
     margin-right: 100px;
@@ -882,7 +882,7 @@ a {
     color: #FFFFFF;
 }
 
-/* our-sectors-container */
+/* our-sectors */
 .our-sectors-container {
     width: 100%;
     margin-top: 100px;
@@ -1081,7 +1081,6 @@ footer {
     width: 12%;
 }
 
-
 .footer-2 {
     width: 100%;
     margin-top: 150px;
@@ -1120,6 +1119,10 @@ footer {
         font-size: 17px;
     }
 
+    .scrolling-text {
+        font-size: 160px;
+    }
+
     .start-project-button {
         width: 220px;
         font-size: 20px;
@@ -1139,19 +1142,7 @@ footer {
         height: 40%;
     }
 
-    .project {
-        height: 56vh;
-    }
-
-    .green-line {
-        margin-top: 75%;
-    }
-
-    .selected-projects-title {
-        margin-left: 0;
-    }
-
-    .selected-projects {
+    #project-1 {
         margin-left: 0;
     }
 
@@ -1267,6 +1258,10 @@ footer {
     .scrolling-text-container {
         margin-top: 130px;
     }
+    
+    .scrolling-text {
+        font-size: 120px;
+    }
 
     .agency-container {
         margin-top: 130px;
@@ -1316,27 +1311,28 @@ footer {
         margin-top: 46px;
     }
 
-    .selected-projects {
-        width: 169%;
-        height: 40%;
+    .project {
+        height: 50vh;
+        width: 36vh;
+        border-radius: 8%;
     }
 
-    .project {
-        height: 36vh;
-        border-radius: 2%;
+    .project>figure>img {
+        height: auto;
     }
 
     .green-line {
-        margin-top: 60%;
+        margin-top: -183%;
     }
 
     .project-title {
-        font-size: 26px;
+        font-size: 24px;
         line-height: 80px;
+        margin-top: -182%;
     }
 
     .project-info {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .all-projects {
