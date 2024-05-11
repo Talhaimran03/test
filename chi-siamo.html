@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/chi-siamo.css">
 
     <!-- js -->
-    <!-- <script src="src/index.js"></script> -->
+    <script src="src/chi-siamo.js"></script>
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -249,76 +249,136 @@
             </p>
             <div class="kick-off-details-list">
                 <div class="kick-off-detail">
-                    <p>Analisi esigenze</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Analisi esigenze</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Ricerca e analisi di mercato</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Ricerca e analisi di mercato</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Definizione degli obiettivi</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Definizione degli obiettivi</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Creazione della strategia</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Creazione della strategia</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Pianificazione del budget</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Pianificazione del budget</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Sviluppo del piano di comunicazione</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Sviluppo del piano di comunicazione</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Creazione di contenuti</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Creazione di contenuti</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Implementazione</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Implementazione</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Monitoraggio e analisi</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Monitoraggio e analisi</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Ottimizzazione</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Ottimizzazione</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Report e feedback</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Report e feedback</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
                 <div class="kick-off-detail">
-                    <p>Manutenzione e supporto</p>
-                    <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 1L9 9L17 1" stroke="white" />
-                    </svg>
+                    <div class="kick-off-dropdown" onclick="toggleDetail(this.parentNode)"> 
+                        <p>Manutenzione e supporto</p>
+                        <svg class="arrow-icon" width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L9 9L17 1" stroke="white" />
+                        </svg>
+                    </div>
+                    <div class="detail-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quas nam commodi ipsam labore saepe dignissimos nisi cum optio provident rerum dolor, temporibus eveniet. Maxime eveniet cum dignissimos neque! Expedita.</p> 
+                    </div>
                 </div>
             </div>
         </div>
